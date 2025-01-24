@@ -1,5 +1,14 @@
 // Tenemos un li de productos
 
+/**
+ * Puntos IMPORTANTES a considerar para este ejercicio:
+ * 
+ * - La aplicación muestra una lista de productos, en este caso zapatos. 
+ * - La información proviene de un arreglo de objetos.
+ * - El usuario puede realizar búsquedas, escribiendo en el input y presionando filtrar.
+ * - En ese momento se aplica un filtro al arreglo y se muestran los elementos que coinciden con la búsqueda.
+ */
+
 const productos = [
   {nombre: "Zapato negro", tipo: "zapato", color: "negro", img: "./taco-negro.jpg"},
   {nombre: "Zapato azul", tipo: "zapato", color: "azul", img: "./taco-azul.jpg"},
@@ -8,7 +17,7 @@ const productos = [
   {nombre: "Zapato rojo", tipo: "zapato", color: "rojo", img: "./zapato-rojo.jpg"}
 ]
 
-const li = document.getElementsByName("lista-de-productos")
+const li = document.getElementsById("lista-de-productos")
 const $i = document.querySelector('.input');
 
 for (let i = 0; i < productos.length; i++) {
@@ -26,6 +35,7 @@ for (let i = 0; i < productos.length; i++) {
   d.appendChild(imagen)
 
   li.appendChild(d)
+  
 }
 
 displayProductos(productos)
