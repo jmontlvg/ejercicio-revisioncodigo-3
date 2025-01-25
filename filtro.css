@@ -22,3 +22,9 @@ input {
   width: 70%;
   height: auto
 }
+
+/* Se agrega este selector solo para cambiar el tipo de letra y comprobar la correcta comunicación entre los archivos HTML y CSS */
+body{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;  
+}

@@ -12,18 +12,18 @@
 <body>
 
   <div>
-    <input type="text" placeholder="Seleccioná un color o tipo" class="input"><!--Se agrega la clase (input)-->
-    <button>Filtrar</button>
+    
+    <input type="text" placeholder="Selecciona un color o tipo" class="input"><!--Se agrega la clase (input)-->
+    
+    <button type="button">Filtrar</button><!--Se agrega el 'type'-->
+
     <h1>Lista de productos </h1>
-
-    <!--Se agrega el elemento <ul>-->
-    <ul id="lista-de-productos"><!--Se agrega el id (lista-de-productos) del elemento <ul>-->
-
-    </ul>
-    <div id="lista-de-productos">
-    </div>
+    
+    <div id="lista-de-productos"></div>
+    
   </div>
-  <script src="../filtro.js"></script>
+
+  <script src="./filtro.js"></script><!--Se corrige ruta de ../filtro.js → ./filtro.js-->
 </body>
 
 </html>
